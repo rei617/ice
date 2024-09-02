@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.bun{
+    margin-left: 5.5rem;
+}
+.name1{
+    text-align: center;
+    font-size: 4em !important; /* 強制的にフォントを大きくします */
+    font-weight:bold;
+    margin-top: 0rem;
+    letter-spacing: 4px; /* 文字間隔をあけます */
+    color: black;
+}
+.name2{
+    text-align: center;
+    margin-top: 0rem;
+    letter-spacing: 4px; /* 文字間隔をあけます */
+    color: #0bd;
+}
+.photo{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0%;
+    margin-bottom: 0rem;
+}
+.photoa{
+    text-align: center;
+    margin-top: 0%;
+    max-width: 80%;
+    margin-bottom: 3rem;
+}
+.henreki{
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+.grid1{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0%;
+    margin-bottom: -1rem;
+}
+.grid2{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 15%;
+    margin-bottom: -1rem;
+}
+.item4{
+    text-align: center;
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+}
+.videoc{
+    margin-top: -8rem;
+    width: 120%;
+    height: 120%;
+    margin-left: -3rem;
+}
+.videod{
+    margin-top: -8rem;
+    width: 135%;
+    height: 135%;
+    margin-left: -3rem;
+}
+.timeline {
+    display: inline-block;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 40%;
+    padding: 10px;
+    margin-left: 3rem;
+  }

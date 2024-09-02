@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/*
+基本的なコードの書き方として,htmlにおけるclassを指定して詳細を書く。例えばhtmlにおいてclass="logo"と書かれたものに対して
+詳細を書きたい場合は.logo{}として書いてあげる。そのclass内にh1やpなどを書いていて,それらの詳細を書きたい場合には
+.logo h1{}などで書いてあげればよい。
+*/
+html{
+    font-size:100%;/*ブラウザーのデフォルトの文字サイズの指定*/
+}
+body{
+    font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height:1.7;
+    color:#432;/*bodyにおけるフォントや色など*/
+}
+a{
+    text-decoration:none;/*テキストへの装飾を行わない*/
+}
+/*ここまではWebサイト全体の体裁とフォントについてだから変えない*/
+
+.grid img{
+    max-width:95%;/*クラスにimgを指定した写真の大きさについて*/
+}
+img{
+    max-width:100%;/*クラスにimgを指定した写真の大きさについて*/
+    margin-top: -9rem;
+}
+/*
+logo
+*/
+.logo{
+    max-width: 180px;/*logoの大きさの指定*/
+    margin-top: 0px;/*上端からの距離の指定*/
+    margin-left: 5px;/*左端からの距離の指定*/
+    width: 100%;/*logo全体の幅の指定*/
+    height: 100px;/*logo全体の高さの指定*/
+    background: linear-gradient(#f7c6bd,#eaf6fd);/*背景の色を指定し,2色がグラデーションになるように*/
+    padding-top: 20px;/*画像の中の文字の画像の上端からの距離の指定*/
+    box-sizing: border-box;
+  }
+  /*main-nav の部分について。ここでは,ice.htmlにおいてclass="main-nav"の部分について装飾している。基本的には上部のアイコンとツールバーについて
+  */
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color: #432;
+}
+.main-nav a:hover{
+    color: #00a5dd;
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*あいすを愛すの文字の装飾をhome-content,page-titleで行っている。*/
+.home-content{
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content h1 {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+.page-title{
+    font-size: 4em !important; /* 強制的にフォントを大きくします */
+    font-weight:bold;
+    margin-top: -17rem;
+    letter-spacing: 4px; /* 文字間隔をあけます */
+    color: white;
+    text-shadow: 
+         2px  2px 1px #666,
+        -2px  2px 1px #666,
+         2px -2px 1px #666,
+        -2px -2px 1px #666,
+         2px  0px 1px #666,
+         0px  2px 1px #666,
+        -2px  0px 1px #666,
+         0px -2px 1px #666;
+  }
+  .slide-container {
+    width: auto;
+    height: 50%;
+    margin-top: -17rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   }
+   .slide-wrapper {
+    display: flex;
+    animation: slide-flow 60s;
+    animation-timing-function: linear;
+    animation-iteration-count:3;
+   }
+   .slide{
+    max-height: 100%;
+    max-width: 300px;
+    object-fit:cover;
+    border: 1px solid #ddd;
+   }
+   @keyframes slide-flow {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+   }
+.henreki{
+    text-align: left;
+}
+.bunb{
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 17rem;
+}
+.photob{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.photoab{
+    text-align: center;
+    margin-top: auto;
+    max-width: 100%;
+    margin-bottom: auto;
+}
+.video{
+    margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+}
+input[type="text"],
+input[type="gender"],
+input[type="email"],
+input[type="message"],
+textarea{
+    background: rgba(255,255,255,.5);
+    border: 1px #607f72 solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"]{
+    width:100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border: #607f72;
+    cursor: pointer;
+    line-height: 1;
+    width: 200px;
+    font-size: 1.375rem;
+    background:linear-gradient(#ffafbd,#ffafbd,#0bd);
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bunc{
+    text-align: left;
+    margin-top: 17rem;
+    margin-bottom: 1rem;
+}

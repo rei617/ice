@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*
+ここはfooterの設定
+*/
+footer{
+    background: #432;
+    text-align: center;
+    padding: 1px 0;
+}
+footer p{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.sns-btn{
+    width: 10%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sns-btn p {
+    width: 20rem;
+    margin-left: -12rem;
+    margin-top: -0.7rem;
+    }
+.sns-btn li {
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.sns-btn img{
+    max-width:80%;/*クラスにimgを指定した写真の大きさについて*/
+}

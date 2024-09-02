@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*
+ここからは画像を横に並べるものの調整
+*/
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    margin-top: 15%;
+    margin-bottom: -1rem;
+}
+.item1{
+    text-align: center;
+    margin-top: 5%;
+}
+.icol-content a {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+.button1{
+    width: 200px;
+    font-size: 1.375rem;
+    background:linear-gradient(#ffafbd,#ffafbd,#0bd);
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button1:hover{
+    background:linear-gradient(#0bd,#ffafbd,#ffafbd);
+}
+.item2{
+    text-align: center;
+    margin-top: 5%;
+}
+.button2{
+    width: 200px;
+    font-size: 1.375rem;
+    background: #fabea7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    margin-left: auto;
+    margin-right: auto;/*margin-left rightともにautoにすることで中央に位置を設定している*/
+}
+.button2:hover{
+    background: linear-gradient(#3b82c4,#de4d4d,#c5a3cb,#92cb97,#ffff,#f5a500,#f9e900,#00a5dd);
+}
+.videob{
+    margin-top: -8rem;
+    width: 90%;
+    height: 90%;
+}
