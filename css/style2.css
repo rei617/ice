@@ -1,4 +1,17 @@
 @charset "UTF-8";
+@media screen and (max-width: 768px) {
+    p{
+        background-color: black;
+         color:green;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    p{
+        background-color: black;
+         color:red;
+     }
+ }
 /*
 基本的なコードの書き方として,htmlにおけるclassを指定して詳細を書く。例えばhtmlにおいてclass="logo"と書かれたものに対して
 詳細を書きたい場合は.logo{}として書いてあげる。そのclass内にh1やpなどを書いていて,それらの詳細を書きたい場合には
