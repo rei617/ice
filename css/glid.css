@@ -5,7 +5,7 @@
 .grid{
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     margin-top: 15%;
     margin-left:3rem;
     margin-bottom: -1rem;
